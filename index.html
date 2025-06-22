@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LesCracks - De l'idée à l'exécution | From Idea to Execution</title>
+    <meta name="description" content="Transformez vos idées en projets concrets avec l'accompagnement personnalisé de LesCracks. Passez enfin à l'exécution. | Transform your ideas into concrete projects with LesCracks personalized guidance." />
+    
+    <!-- Fonts optimisés avec poids et styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lescracks.com/" />
+    <meta property="og:title" content="LesCracks - De l'idée à l'exécution" />
+    <meta property="og:description" content="Transformez vos idées en projets concrets avec un accompagnement personnalisé qui vous fait passer à l'action." />
+    <meta property="og:image" content="/og-image.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://lescracks.com/" />
+    <meta property="twitter:title" content="LesCracks - De l'idée à l'exécution" />
+    <meta property="twitter:description" content="Transformez vos idées en projets concrets avec un accompagnement personnalisé qui vous fait passer à l'action." />
+    <meta property="twitter:image" content="/og-image.png" />
+
+    <!-- Palette bleue personnalisée -->
+    <style>
+      :root {
+        --font-primary: 'Inter', system-ui, -apple-system, sans-serif;
+        --font-display: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+
+        /* Palette bleu LesCracks */
+        --blue-50:  #eff6ff;
+        --blue-100: #dbeafe;
+        --blue-200: #bfdbfe;
+        --blue-300: #93c5fd;
+        --blue-400: #60a5fa;
+        --blue-500: #3b82f6;
+        --blue-600: #2563eb;
+        --blue-700: #1d4ed8;
+        --blue-800: #1e40af;
+        --blue-900: #1e3a8a;
+
+        /* Espacements */
+        --space-xs: 0.25rem;
+        --space-sm: 0.5rem;
+        --space-md: 1rem;
+        --space-lg: 1.5rem;
+        --space-xl: 2rem;
+        --space-2xl: 3rem;
+        --space-3xl: 4rem;
+
+        /* Bords arrondis */
+        --radius-sm: 0.5rem;
+        --radius-md: 1rem;
+        --radius-lg: 1.5rem;
+        --radius-xl: 2rem;
+        --radius-2xl: 2.5rem;
+        --radius-3xl: 3rem;
+      }
+
+      body {
+        font-family: var(--font-primary);
+        font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        font-family: var(--font-display);
+        font-weight: 800;
+        letter-spacing: -0.025em;
+        line-height: 1.1;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #f1f5f9;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(to bottom, var(--blue-400), var(--blue-600));
+        border-radius: 4px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(to bottom, var(--blue-500), var(--blue-700));
+      }
+
+      /* Couleur de sélection de texte */
+      ::selection {
+        background-color: var(--blue-200);
+        color: var(--blue-900);
+      }
+
+      /* Styles de focus */
+      *:focus-visible {
+        outline: 2px solid var(--blue-500);
+        outline-offset: 2px;
+      }
+
+      /* Réduction des animations pour accessibilité */
+      @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+    </style>
+
+    <!-- === Où mettre les icônes ? === -->
+    <!--
+      - Favicon principal (favicon.ico) à la racine ou favicon.svg :  
+        <link rel="icon" href="/favicon.ico" />
+      - Icone SVG (comme ici) :  
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+      - Icônes Apple Touch pour mobiles/tablettes (adaptées) :  
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+      - Icônes Android/manifest :  
+        <link rel="manifest" href="/site.webmanifest" />
+      - Icônes supplémentaires pour Windows (mstile) et autres plateformes peuvent être ajoutées ici selon besoin.
+      - Place ces balises dans la section <head> comme dans cet exemple.
+
+      Assure-toi que les fichiers images (favicon.ico, vite.svg, apple-touch-icon.png, etc.) soient bien présents dans le dossier public.
+    -->
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
