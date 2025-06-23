@@ -170,7 +170,7 @@ export const content = {
       name: 'Kamga Brandon',
       role: 'Mentor Principal & Fondateur',
       speciality: 'Full Stack AI & DevOps',
-      bio: 'Passionné par l\'accompagnement depuis +4 ans. J\'ai aidé le maximum des jeunes à se demarquer et passer a l\' action. Ma mission : révéler ton potentiel et te connecter aux bonnes opportunités.',
+      bio: 'Passionné par l\'accompagnement depuis plus de 3 ans. J\'ai aidé le maximum des jeunes à se demarquer et passer a l\' action. Ma mission : révéler ton potentiel et te connecter aux bonnes opportunités.',
       experience: '3+ ans d\'expérience',
       projects: '200+ projets accompagnés',
       satisfaction: '99% de satisfaction',
