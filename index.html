@@ -2,31 +2,67 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LesCracks - De l'idée à l'exécution | From Idea to Execution</title>
-    <meta name="description" content="Transformez vos idées en projets concrets avec l'accompagnement personnalisé de LesCracks. Passez enfin à l'exécution. | Transform your ideas into concrete projects with LesCracks personalized guidance." />
-    
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#1d4ed8" />
+    <meta name="language" content="fr, en" />
+    <meta http-equiv="Content-Language" content="fr, en" />
+    <link rel="canonical" href="https://les-cracks.vercel.app/" />
+
+    <title>LesCracks – De l'idée à l'exécution | Coaching pour jeunes qui veulent faire la différence</title>
+    <meta name="description" content="Coaching structurant pour jeunes qui veulent concrétiser leurs idées, gagner en visibilité, et passer à l’action. Structure, branding, exécution, réseau. Programme 100% orienté résultats." />
+    <meta name="keywords" content="coaching projet, programme pour jeunes, jeunes ambitieux, exécution projet, accompagnement concret, projet freelance, branding personnel, visibilité professionnelle, mentorat jeune, réussite carrière, formation action, projet startup, skills valorisation, portfolio concret, coaching execution, young entrepreneur program, career guidance, personal branding, project coaching, startup youth, execution program" />
+    <meta name="author" content="LesCracks" />
+
     <!-- Fonts optimisés avec poids et styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-    
-    <!-- Open Graph / Facebook -->
+
+    <!-- Open Graph (WhatsApp, Facebook, LinkedIn, Discord, Messenger) -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://lescracks.com/" />
-    <meta property="og:title" content="LesCracks - De l'idée à l'exécution" />
-    <meta property="og:description" content="Transformez vos idées en projets concrets avec un accompagnement personnalisé qui vous fait passer à l'action." />
-    <meta property="og:image" content="/og-image.png" />
+    <meta property="og:url" content="https://les-cracks.vercel.app/" />
+    <meta property="og:site_name" content="LesCracks" />
+    <meta property="og:title" content="LesCracks – Coaching pour jeunes qui veulent faire la différence" />
+    <meta property="og:description" content="Transforme tes compétences en projets visibles. Coaching personnalisé, structuration, exécution, branding, impact réel." />
+    <meta property="og:image" content="https://les-cracks.vercel.app/og-image.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="fr_FR" />
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://lescracks.com/" />
-    <meta property="twitter:title" content="LesCracks - De l'idée à l'exécution" />
-    <meta property="twitter:description" content="Transformez vos idées en projets concrets avec un accompagnement personnalisé qui vous fait passer à l'action." />
-    <meta property="twitter:image" content="/og-image.png" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://les-cracks.vercel.app/" />
+    <meta name="twitter:title" content="LesCracks – Coaching structurant et concret" />
+    <meta name="twitter:description" content="Coaching de haut niveau pour jeunes qui veulent structurer leur vision, lancer leurs projets et gagner en visibilité." />
+    <meta name="twitter:image" content="https://les-cracks.vercel.app/og-image.png" />
+    <meta name="twitter:site" content="@lescracks" />
+    <meta name="twitter:creator" content="@lescracks" />
 
-    <!-- Palette bleue personnalisée -->
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "LesCracks",
+      "url": "https://les-cracks.vercel.app/",
+      "logo": "https://les-cracks.vercel.app/logo.png",
+      "description": "Programme de coaching concret pour jeunes qui veulent faire la différence. Exécution, structure, impact, réseau.",
+      "sameAs": [
+        "https://www.linkedin.com/company/lescracks",
+        "https://twitter.com/lescracks",
+        "https://instagram.com/lescracks"
+      ],
+      "founder": {
+        "@type": "Person",
+        "name": "Brandoniscoding"
+      }
+    }
+    </script>
+
+    <!-- Palette bleue personnalisée et typographie conservées -->
     <style>
       :root {
         --font-primary: 'Inter', system-ui, -apple-system, sans-serif;
@@ -81,7 +117,6 @@
         scroll-behavior: smooth;
       }
 
-      /* Custom scrollbar */
       ::-webkit-scrollbar {
         width: 8px;
       }
@@ -99,19 +134,16 @@
         background: linear-gradient(to bottom, var(--blue-500), var(--blue-700));
       }
 
-      /* Couleur de sélection de texte */
       ::selection {
         background-color: var(--blue-200);
         color: var(--blue-900);
       }
 
-      /* Styles de focus */
       *:focus-visible {
         outline: 2px solid var(--blue-500);
         outline-offset: 2px;
       }
 
-      /* Réduction des animations pour accessibilité */
       @media (prefers-reduced-motion: reduce) {
         *, *::before, *::after {
           animation-duration: 0.01ms !important;
@@ -120,22 +152,6 @@
         }
       }
     </style>
-
-    <!-- === Où mettre les icônes ? === -->
-    <!--
-      - Favicon principal (favicon.ico) à la racine ou favicon.svg :  
-        <link rel="icon" href="/favicon.ico" />
-      - Icone SVG (comme ici) :  
-        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-      - Icônes Apple Touch pour mobiles/tablettes (adaptées) :  
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-      - Icônes Android/manifest :  
-        <link rel="manifest" href="/site.webmanifest" />
-      - Icônes supplémentaires pour Windows (mstile) et autres plateformes peuvent être ajoutées ici selon besoin.
-      - Place ces balises dans la section <head> comme dans cet exemple.
-
-      Assure-toi que les fichiers images (favicon.ico, vite.svg, apple-touch-icon.png, etc.) soient bien présents dans le dossier public.
-    -->
   </head>
   <body>
     <div id="root"></div>
